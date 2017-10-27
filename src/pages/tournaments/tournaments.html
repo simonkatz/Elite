@@ -15,11 +15,8 @@
 
 <ion-content padding>
   <ion-list>
-    <button ion-item (click)="itemTapped()">
-      National Football League A
-    </button>
-    <button ion-item (click)="itemTapped()">
-      National Football League B
+    <button ion-item *ngFor="let item of tournaments" (click)="itemTapped($event, item)">
+      {{ item.name }}
     </button>
   </ion-list>
 </ion-content>
