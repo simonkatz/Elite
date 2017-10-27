@@ -5,6 +5,7 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { ListPage } from '../pages/list/list';
+import { GamePage, MyTeamsPage, TeamDetailPage, TournamentsPage, TeamsPage, TeamHomePage, StandingsPage } from '../pages/pages';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -13,7 +14,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   declarations: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    GamePage,
+    MyTeamsPage,
+    TeamDetailPage,
+    TournamentsPage,
+    TeamsPage,
+    TeamHomePage,
+    StandingsPage
   ],
   imports: [
     BrowserModule,
@@ -23,7 +31,14 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   entryComponents: [
     MyApp,
     HomePage,
-    ListPage
+    ListPage,
+    GamePage,
+    MyTeamsPage,
+    TeamDetailPage,
+    TournamentsPage,
+    TeamsPage,
+    TeamHomePage,
+    StandingsPage
   ],
   providers: [
     StatusBar,

@@ -2,5 +2,7 @@
   "name": "elite",
   "app_id": "81f1eee6",
   "type": "ionic-angular",
-  "integrations": {}
+  "integrations": {
+    "cordova": {}
+  }
 }
