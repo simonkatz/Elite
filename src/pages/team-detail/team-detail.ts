@@ -22,17 +22,20 @@ export class TeamDetailPage {
 
   team: any;
   games: any[];
+  teamStanding: any;
   private tournamentData: any;
 
   constructor(
     public navCtrl: NavController,
     public navParams: NavParams,
-    private eliteApi: EliteApi) { }
-
-  ionViewDidLoad() {
+    private eliteApi: EliteApi)
+  {
     this.team = this.navParams.data;
     this.tournamentData = this.eliteApi.getCurrentTournament();
+    this.teamStanding = _.find(this.tournamentData.standings, {"teamId": this.team.id });
+  }
 
+  ionViewDidLoad() {
     this.games = _.chain(this.tournamentData.games)
                   .filter(g => g.team1Id === this.team.id || g.team2Id === this.team.id)
                   .map(g => {
