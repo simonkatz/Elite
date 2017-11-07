@@ -14,13 +14,13 @@
 <ion-content padding>
   <ion-list>
     <ion-item-group *ngFor="let division of allStandings">
-      <ion-item-divider secondary>
+      <ion-item-divider color="secondary">
         {{ division.divisionName }}
       </ion-item-divider>
       <ion-item *ngFor="let team of division.divisionStandings">
         <ion-row>
           <ion-col>
-            <h2 primary>{{ team.teamName }}</h2>
+            <h2 color="primary">{{ team.teamName }}</h2>
           </ion-col>
         </ion-row>
         <ion-row>
